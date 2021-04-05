@@ -9,6 +9,6 @@ First few versions were made using itertools and NumPy, and were not optimised a
 cartesian product of all possible throw results for given amount of dice and amount of sides on 1 die, then using NumPy's Ufuncs I sifted out acceptable results for given scenarios.
 Operating time was ok for up to 6-7 dice, but above that my computer started to have huge problems. Current version is done by pure math equations.
 
-GUI is done with PySimpleGUI.
+GUI is made using PySimpleGUI.
 
 I hope someone will find it helpful :).
