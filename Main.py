@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 import Chances
 
+# For this to work, you need to have the second file (Chances) imported. This is merely a GUI.
 sg.theme('DarkTeal9')
 
 
