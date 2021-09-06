@@ -2,11 +2,10 @@ import math
 
 
 def Chance_for_x_successes(success_amount, success_barrier, dice_thrown_amount, amount_of_sides):
-
     if success_amount > dice_thrown_amount:
         return 'Incorrect input (amount of successes > amount of dice thrown)!'
 
-    # make the set bigger,to match the success_barrier
+    # Make the set bigger to match the success_barrier
     i = (amount_of_sides - success_barrier) + 1
 
     # Math equation
@@ -14,14 +13,15 @@ def Chance_for_x_successes(success_amount, success_barrier, dice_thrown_amount, 
     combination = math.factorial(dice_thrown_amount)/(math.factorial(success_amount) * math.factorial(dice_thrown_amount - success_amount))
     probability = (combination * (p**success_amount) * (1-p)**(dice_thrown_amount - success_amount)) * 100
 
+    # Set boundaries
     if probability <= 0:
         probability = 0
     if probability > 100:
         probability = 100
 
     probability = str(round(probability, 5)) + '%'
-
     return probability
+
 
 def Chance_for_1(success_barrier, dice_thrown_amount, amount_of_sides, success_amount):
 
@@ -42,14 +42,13 @@ def Chance_for_1(success_barrier, dice_thrown_amount, amount_of_sides, success_a
                 math.factorial(success_amount) * math.factorial(dice_thrown_amount - success_amount))
         probability += (combination * (p ** success_amount) * (1 - p) ** (dice_thrown_amount - success_amount)) * 100
 
-    # grammatical variation
+    # Set Boundaries
     if probability <= 0:
         probability = 0
     if probability > 100:
         probability = 100
 
     probability = str(round(probability, 5)) + '%'
-
     return probability
 
 
@@ -68,7 +67,6 @@ def Chance_every_side_equal_x(dice_thrown_amount, amount_of_sides, expected_valu
         probability = 100
 
     probability = str(round(probability, 5)) + '%'
-
     return probability
 
 
@@ -87,7 +85,6 @@ def Chance_equal_greater(dice_thrown_amount, amount_of_sides, value):
         probability = 100
 
     probability = str(round(probability, 5)) + '%'
-
     return probability
 
 
@@ -106,5 +103,4 @@ def Chance_equal_lower(dice_thrown_amount, amount_of_sides, value):
         probability = 100
 
     probability = str(round(probability, 5)) + '%'
-
     return probability

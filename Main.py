@@ -51,11 +51,11 @@ def Chancewr():
 
 def Chancerw():
     layout = [[sg.Text('Calculating the probability of every side equal to or greater than X:', size=(50, 1))],
-                  [sg.Text('Sides on a die:', size=(35, 1)), sg.Input(key='amount_of_sides', enable_events=True)],
-                  [sg.Text('Amount of dice thrown:', size=(35, 1)), sg.Input(key='dice_thrown_amount', enable_events=True)],
-                  [sg.Text('X:', size=(35, 1)), sg.Input(key='value', enable_events=True)],
-                  [sg.Text(size=(100, 1), k='-OUTPUT-')],
-                  [sg.Button('Calculate the probability of every side equal to or greater than X!', size=(35, 2)), sg.Button('Exit')]]
+              [sg.Text('Sides on a die:', size=(35, 1)), sg.Input(key='amount_of_sides', enable_events=True)],
+              [sg.Text('Amount of dice thrown:', size=(35, 1)), sg.Input(key='dice_thrown_amount', enable_events=True)],
+              [sg.Text('X:', size=(35, 1)), sg.Input(key='value', enable_events=True)],
+              [sg.Text(size=(100, 1), k='-OUTPUT-')],
+              [sg.Button('Calculate the probability of every side equal to or greater than X!', size=(35, 2)), sg.Button('Exit')]]
     return sg.Window('Chancerw', layout, finalize=True)
 
 
