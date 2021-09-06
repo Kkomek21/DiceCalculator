@@ -1,7 +1,7 @@
 import math
 
 
-def chance_for_x_successes(success_amount, success_barrier, dice_thrown_amount, amount_of_sides):
+def Chance_for_x_successes(success_amount, success_barrier, dice_thrown_amount, amount_of_sides):
 
     if success_amount > dice_thrown_amount:
         return 'Incorrect input (amount of successes > amount of dice thrown)!'
@@ -23,11 +23,11 @@ def chance_for_x_successes(success_amount, success_barrier, dice_thrown_amount, 
 
     return probability
 
-def chance_for_1(success_barrier, dice_thrown_amount, amount_of_sides, success_amount):
+def Chance_for_1(success_barrier, dice_thrown_amount, amount_of_sides, success_amount):
 
     i = (amount_of_sides - success_barrier) + 1
 
-    # chance for success
+    # Chance for success
     p = (i / amount_of_sides)
 
     # math for exactly 1 success
@@ -53,7 +53,7 @@ def chance_for_1(success_barrier, dice_thrown_amount, amount_of_sides, success_a
     return probability
 
 
-def chance_every_side_equal_x(dice_thrown_amount, amount_of_sides, expected_value):
+def Chance_every_side_equal_x(dice_thrown_amount, amount_of_sides, expected_value):
 
     if expected_value > amount_of_sides:
         return 'Incorrect input (X > amount of sides)'
@@ -72,7 +72,7 @@ def chance_every_side_equal_x(dice_thrown_amount, amount_of_sides, expected_valu
     return probability
 
 
-def chance_equal_greater(dice_thrown_amount, amount_of_sides, value):
+def Chance_equal_greater(dice_thrown_amount, amount_of_sides, value):
 
     if value > amount_of_sides:
         return 'Incorrect input (X > amount of sides)'
@@ -91,7 +91,7 @@ def chance_equal_greater(dice_thrown_amount, amount_of_sides, value):
     return probability
 
 
-def chance_equal_lower(dice_thrown_amount, amount_of_sides, value):
+def Chance_equal_lower(dice_thrown_amount, amount_of_sides, value):
 
     if value > amount_of_sides:
         return 'Incorrect input (X > amount of sides)'
