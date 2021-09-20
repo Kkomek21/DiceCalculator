@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import PySimpleGUI as sg
 import Chances
 
@@ -18,7 +19,7 @@ def Intro():
 def Chancep1():
     layout = [[sg.Text('Calculating the probability of at least 1 success:', size=(35, 1))],
               [sg.Text('Sides on a die:', size=(35, 1)), sg.Input(key='amount_of_sides', enable_events=True)],
-              [sg.Text('Amount of Amount of dice thrown:', size=(35, 1)), sg.Input(key='dice_thrown_amount', enable_events=True)],
+              [sg.Text('Amount of dice thrown:', size=(35, 1)), sg.Input(key='dice_thrown_amount', enable_events=True)],
               [sg.Text('Success barrier (value+):', size=(35, 1)), sg.Input(key='success_barrier', enable_events=True)],
               [sg.Text(size=(100, 1), k='-OUTPUT-')],
               [sg.Button('Calculate the probability of at least 1 success!', size=(35, 2)), sg.Button('Exit')]]
@@ -80,7 +81,7 @@ def Main():
                 window2 = None
             elif window == window1:     # if closing win 1, exit program
                 break
-        elif event == 'At least 1 success' and not window2:
+        elif event == 'At least 1 success on dice' and not window2:
             window2 = Chancep1()
         elif event == 'Exactly X successes' and not window2:
             window2 = Chancexs()
