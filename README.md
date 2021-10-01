@@ -1,14 +1,15 @@
 # DiceCalculator
-Dice throws probability.
-
-Made mainly for fun, but also to integrate into future electronic projects.
-
-All scenarios are flexible in the amount of sides on a die, amount of dice thrown, and sometimes the success barriers, success amounts etc. .
-
-First few versions were made using itertools and NumPy, and were not optimised at all because of their premise. For all scenarios I created a sample_space, by calculating the
-cartesian product of all possible throw results for given amount of dice and amount of sides on 1 die, then using NumPy's Ufuncs I sifted out acceptable results for given scenarios.
-Operating time was ok for up to 6-7 dice, but above that my computer started to have huge problems. Current version is done by pure math equations.
-
-GUI is made using PySimpleGUI.
-
-I hope someone will find it helpful :).
+## Description
+I often play RPG's and board games, and calculating different dice roll outcomes is often tricky. So I made this probability calculator in a few days to aid myself with. 
+## Installation
+Modules needed to run are contained in requirements.txt.\
+[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg) [![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg)
+## Usage
+Calculator contains different probability cases:
+- At least 1 success on dice
+- Exactly X successes
+- Every side equal to X
+- Every side equal to or greater than X
+- Every side equal to or lower than X
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
