@@ -13,3 +13,6 @@ Calculator contains different probability cases:
 - Every side equal to or lower than X
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Screenshots
+![Main_menu](https://user-images.githubusercontent.com/66322273/135688593-8d77f5a3-68e8-4d78-a73a-ec7592f37892.png)
+![Probability](https://user-images.githubusercontent.com/66322273/135688811-f91021d1-ab6b-45c6-8781-b146ea040ed8.gif)
